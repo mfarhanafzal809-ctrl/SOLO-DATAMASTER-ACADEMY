@@ -29,7 +29,7 @@ outputType = "webview"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "node server.js"
+args = "node -e \"const http=require('http'),fs=require('fs'),path=require('path');const s=http.createServer((r,rs)=>{let u=r.url.split('?')[0]||'/';u=u==='/'?'/index.html':u;const f=path.join('.',u);fs.readFile(f,(e,d)=>{if(e){rs.writeHead(404);rs.end('Not found')}else{rs.writeHead(200);rs.end(d)}})});s.listen(8081,'0.0.0.0');console.log('Server on 8081')\""
 waitForPort = 8081
 
 [agent]
