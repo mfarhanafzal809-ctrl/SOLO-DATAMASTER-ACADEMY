@@ -1125,6 +1125,21 @@ function renderAboutPage() {
       </div>
     </div>
 
+    <div style="max-width:700px;margin:0 auto;padding:0 32px 80px;">
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-xl);padding:40px;text-align:center;backdrop-filter:blur(12px);" class="reveal">
+        <div style="font-family:var(--font-display);font-size:22px;font-weight:700;background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:16px;">Contact Us</div>
+        <p style="font-size:16px;color:var(--text-secondary);line-height:1.75;margin-bottom:24px;">
+          Have questions, feedback, or want to collaborate? Reach out and we will respond within 24 hours.
+        </p>
+        <div style="display:flex;flex-direction:column;gap:16px;max-width:480px;margin:0 auto;">
+          <input type="text" placeholder="Your Name" style="background:var(--bg-glass);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 16px;color:var(--text-primary);font-family:var(--font-body);font-size:14px;outline:none;transition:var(--transition);" onfocus="this.style.borderColor='var(--border-glow)'" onblur="this.style.borderColor='var(--border)'">
+          <input type="email" placeholder="Your Email" style="background:var(--bg-glass);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 16px;color:var(--text-primary);font-family:var(--font-body);font-size:14px;outline:none;transition:var(--transition);" onfocus="this.style.borderColor='var(--border-glow)'" onblur="this.style.borderColor='var(--border)'">
+          <textarea placeholder="Your Message" rows="4" style="background:var(--bg-glass);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 16px;color:var(--text-primary);font-family:var(--font-body);font-size:14px;outline:none;transition:var(--transition);resize:vertical;" onfocus="this.style.borderColor='var(--border-glow)'" onblur="this.style.borderColor='var(--border)'"></textarea>
+          <button class="btn-primary" style="margin-top:8px;" onclick="alert('Thank you for reaching out! We will get back to you within 24 hours.')">Send Message</button>
+        </div>
+      </div>
+    </div>
+
     <footer class="footer">
       <div class="footer-brand">DataMaster Academy</div>
       <p>The Ultimate Zero-to-Architect Data Analyst Curriculum</p>
